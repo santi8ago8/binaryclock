@@ -1,0 +1,59 @@
+body
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+	margin 0
+	padding 0
+	background: #150036
+	
+
+html5(name,args...)
+	{name} args
+	-o-{name} args
+	-webkit-{name} args
+	-moz-{name} args
+
+margins=15px;
+.binaryClock
+	position absolute
+	top margins
+	left margins
+	right margins
+	bottom margins
+	background #20004F
+
+	html5 border-radius margins
+	html5 box-shadow 0px 0px 8px 4px #20004F
+ball-size=35px
+.pointOff
+	height ball-size;
+	width ball-size;
+	position absolute;
+	background: #25005C
+	html5 border-radius ball-size
+.pointOn
+	height ball-size;
+	width ball-size;
+	position absolute;
+	background: white
+	html5 border-radius ball-size
+	html5 box-shadow 0px 0px 17px 0px white
+	timetrans=400ms
+	transition transform timetrans ease
+	-webkit-transition -webkit-transform timetrans ease
+	html5 transform rotate3d(1,0,0,90deg)
+.pointOnOpen
+	html5 transform rotate3d(1,0,0,0deg)
+.pointOnClose
+	html5 transform rotate3d(1,0,0,90deg)
+.description
+	font-size 1em
+	color: white
+	position: absolute;
+	margin 0;
+	left 0px
+	bottom 0px
+
+a
+	color white;
+
+a:visited
+	color white

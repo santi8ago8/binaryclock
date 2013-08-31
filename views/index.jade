@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	.binaryClock
+		-var j=1;
+		-var l=1;
+		-var defase=3;
+		-var ball_size=25/2;
+		-for(var i=0;i<24;i++)
+			div(class='point#{i}',style='top:#{(j*20)-defase}%;left:#{((l*(100/7))-defase)}%').pointOff
+			div(class='pointLigth#{i}',style='top:#{j*20-defase}%;left:#{(l*(100/7)-defase)}%').pointOn
+			-j++;
+			-if (j>4)
+				-j=1; l++;
+
+		h1.description	Binary Clock - Developed by: Santiago N. Cordoba  
+			a(href='http://twitter.com/santi8ago8',target='_blank') Twitter 
+			a(href='mailto:santi8ago8@gmail.com',target='_blank') GMail 
+			a(href='http://en.wikipedia.org/wiki/Binary_clock',target='_blank') Help 
+
+
