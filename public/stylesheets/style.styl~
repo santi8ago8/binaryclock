@@ -37,8 +37,8 @@ ball-size=35px
 	html5 border-radius ball-size
 	html5 box-shadow 0px 0px 17px 0px white
 	timetrans=400ms
-	transition all timetrans ease
-	-webkit-transition all timetrans ease
+	transition transform,opacity timetrans ease
+	-webkit-transition -webkit-transform,opacity timetrans ease
         
 	html5 transform rotate3d(1,0,0,90deg)
 
